@@ -14,7 +14,7 @@ void main(List<String> args) {}
 
 
 
-abstract class Matematik {
+abstract class Matematik { // الملخص: إنها فئة، يمكن أن تحتوي على أساليب افتراضية، ولا يمكن إنشاء مثيل لها، ويمكن توريثها فقط.
   final PI = 3.14;
 
   double toplama(double a, double b);
