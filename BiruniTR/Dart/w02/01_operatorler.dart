@@ -21,6 +21,7 @@ void main(List<String> args) {
   a3 = ++a3 + --a2 * (a--);
 
   //C-ternary operatorler, 3 lü
-  String cinsiyet = "Bayan";
+  String cinsiyet = "Erkek";
   double yasSinir = cinsiyet == "Erkek" ? 1 : 0;
+  print(yasSinir);
 }

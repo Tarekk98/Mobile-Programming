@@ -1,5 +1,6 @@
 //class declaration/definition = sınıf tanımlama
 //sınıf != obje
+
 class Ogrenci {
 //Üyeler/sınıfın içindeki herşey
 //01. Statik üyeler //Sonradan anlatılacak
@@ -8,6 +9,7 @@ class Ogrenci {
 //    01.Field, veri alanları
   //public access modifiers / erişim denetleyicileri //encapsulation
   //int? no;
+  // (?) = Bu özellikler, bir değişkenin null değer alabileceğini ifade etmek için kullanılır.
   //String? ad;
   //String? soyad;
   //bool? cinsiyet;

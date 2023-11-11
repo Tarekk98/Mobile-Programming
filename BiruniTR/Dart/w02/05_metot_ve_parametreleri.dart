@@ -1,27 +1,27 @@
 void main(List<String> args) {
-  //print(Sum1(1, 2));
+  print(Sum1(1, 2));
 
-  //print(Sum2());
-  //print(Sum2(1));
-  //print(Sum2(1, 3));
+  print(Sum2());
+  print(Sum2(1));
+  print(Sum2(1, 3));
 
-  //print(Sum3(1));
-  //print(Sum3(1, 2));
-  //print(Sum3(1, 2, 3));
+  print(Sum3(1));
+  print(Sum3(1, 2));
+  print(Sum3(1, 2, 3));
 
-  //print(Sum4());
-  //print(Sum4(a: 1));
-  //print(Sum4(b: 2));
-  //print(Sum4(a: 1, b: 2));
-  //print(Sum4(b: 2, a: 1));
+  print(Sum4());
+  print(Sum4(a: 1));
+  print(Sum4(b: 2));
+  print(Sum4(a: 1, b: 2));
+  print(Sum4(b: 2, a: 1));
 
-  //print(Sum5(1));
-  //print(Sum5(1, a: 2));
-  //print(Sum5(1, a: 2, b: 2));
-  //print(Sum5(1, b: 3, a: 2));
+  print(Sum5(1));
+  print(Sum5(1, a: 2));
+  print(Sum5(1, a: 2, b: 2));
+  print(Sum5(1, b: 3, a: 2));
 
-  //print(Sum6(1, a: 2, b: 3));
-  //print(Sum6(1, b: 3, a: 2));
+  print(Sum6(1, a: 2, b: 3));
+  print(Sum6(1, b: 3, a: 2));
 
   print(Sum7(1, a: 2));
   print(Sum7(1, a: 2, b: 2));

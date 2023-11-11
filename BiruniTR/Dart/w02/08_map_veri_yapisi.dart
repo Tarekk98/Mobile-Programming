@@ -1,3 +1,5 @@
+import '../w04/07_builtin_generic_classes.dart';
+
 void main(List<String> args) {
   //c#, java => dictionary
   //anahtar / değer
@@ -33,4 +35,5 @@ void main(List<String> args) {
     satir2,
     satir3,
   ];
+  print(books);
 }

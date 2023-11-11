@@ -1,8 +1,8 @@
 import 'Ogrenci.dart';
 
 class Ders {
-  static int? uniKod =
-      1; //tüm dersler için ıuni kod aynı olduğundan bu field statik olabilir.
+  static int? uniKod =1;
+   //tüm dersler için uni kod aynı olduğundan bu field statik olabilir.
 
   int? _kod;
   String? _adi;
@@ -38,13 +38,16 @@ class Ders {
     return _kapasite;
   }
 
+  static set setOgrenciSayisi(int? ogrenciSayisi) {
+    _ogrenciSayisi = _ogrenciSayisi;
+  }
+
+
   static get getOgrenciSayisi {
     return _ogrenciSayisi;
   }
 
-  static set setOgrenciSayisi(int? ogrenciSayisi) {
-    _ogrenciSayisi = _ogrenciSayisi;
-  }
+  
 
   //static metotlar
   //static constructor

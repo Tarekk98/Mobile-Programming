@@ -1,5 +1,5 @@
 void main(List<String> args) {
-  int a = 100;
+  int a = 101;
   int b = 100;
 
   if (a > b) {

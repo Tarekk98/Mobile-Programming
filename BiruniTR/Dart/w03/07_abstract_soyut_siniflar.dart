@@ -1,16 +1,30 @@
 void main(List<String> args) {
   var sek1 = Dikdortgen();
-  sek1.alanHesapla([2, 3]);
+  //sek1.alanHesapla([2, 3]);
+    print(sek1.alanHesapla([2,3]));
+  print(sek1.cevreHesapla([2,3]));
 
   var sek2 = Daire();
-  sek2.alanHesapla([4]);
+  //sek2.alanHesapla([4]);
+  print(sek2.alanHesapla([4]));
+  print(sek2.cevreHesapla([4]));
 }
 
-//soyut sınıflar objesi oluşturulamaz
+//soyut sınıflar objesi oluşturulamaz//soyut= غير ملموس
 //sadece miras alınabilirler.
 
+//   - `abstract` kelimesi, `Sekil` sınıfının soyut (abstract) bir sınıf olduğunu belirtir.
+// Soyut sınıflar, doğrudan örneklenemezler. Yani, bu sınıftan doğrudan bir nesne oluşturamazsınız.
+// Soyut sınıflar genellikle başka sınıflar için temel bir yapı veya arayüz sağlamak amacıyla kullanılır.
+
+//`final` kelimesi, bir değişkenin değerinin sadece bir kez atanabileceğini belirtir.
+//Yani, bir kez değer atandıktan sonra değiştirilemez.
+//Bu durum, `PI` adlı alan için geçerlidir.
+// Bu alan, sabit bir değere sahiptir ve değeri bir kez atanarak daha sonra değiştirilemez
+
+/************************************************************************* */
 abstract class Sekil {
-  final double PI = 3.145;
+  final double PI = 3.14;
   String? sekilAdi;
 
   //concrete method/gövdeli method

@@ -1,6 +1,6 @@
 void main(List<String> args) {
-  int a = 1;
-  int b = 0;
+  int a = 0;
+  int b =0;
 
   if (b == 0) {
     throw BenimHatam("Sıfıra bölme hatası");

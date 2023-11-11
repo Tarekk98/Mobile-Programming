@@ -1,29 +1,33 @@
 void main(List<String> args) {
-  B b = B(2);
-  //B c = B.ym2(2, 2);
-  C c = C(2);
+  Bclass b = Bclass(2);
+  Bclass c1 = Bclass.ym2(2, 2);
+  Cclass c = Cclass(2);
 }
 
-class A {
-  //A();
-  A.ym1(int a) {
+int? a;
+
+class Aclass {
+  Aclass();
+
+  Aclass.ym1(int a) {
     //....
   }
-  //A.ym2(int a, int b);
 
-  int? a;
+  Aclass.ym2(int a, int b);
+
   void m() {}
 }
 
-class B extends A {
-  B(int a) : super.ym1(a) {
+class Bclass extends Aclass {
+  //bir alt sınıfın üst sınıfındaki bir üyenin çağrılmasını ifade eden bir anahtar kelimedir//super=this
+  Bclass(int a) : super.ym1(a) {
     //....
   }
-  // B.ym2(int a, int b) : super.ym2(a, b);
+  Bclass.ym2(int a, int b) : super.ym2(a, b);
 }
 
-class C extends B {
-  C(int a) : super(a) {
+class Cclass extends Bclass {
+  Cclass(int a) : super(a) {
     //....
   }
 }

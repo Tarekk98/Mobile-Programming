@@ -4,16 +4,24 @@ void main(List<String> args) {
   isYaptir(Balik());
   isYaptir(Kus());
 
-  communicate(SmsService());
-  communicate(EmailService());
+  iletisim(SmsService());
+  iletisim(EmailService());
+  
 }
 
-void communicate(MessageService messenger) {
+
+abstract class MessageService {//فئة
+  void SendMessage();//أساليب افتراضية
+  void ReadMessage();//أساليب افتراضية
+  
+}
+
+void iletisim(MessageService messenger) {
   //.....
   messenger.SendMessage();
 }
 
-void isYaptir(Canli c) {
+void isYaptir(Canli c ) {
   c.hareketEt();
 }
 
@@ -42,11 +50,6 @@ class Insan extends Canli {
   void hareketEt() {
     print("Insan yürümeye başladı");
   }
-}
-
-abstract class MessageService {
-  void SendMessage();
-  void ReadMessage();
 }
 
 class SmsService implements MessageService {

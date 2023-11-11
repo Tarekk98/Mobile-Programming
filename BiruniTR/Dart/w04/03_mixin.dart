@@ -1,3 +1,6 @@
+
+//mixin هو مفهوم مستخدم في لغة برمجة Dart ويستخدم لإضافة وظائف إضافية إلى الفئات
+
 void main(List<String> args) {
   Kus k = Kus();
   k.m();
@@ -24,7 +27,7 @@ mixin Kosabilen {
   }
 }
 
-class Kus with Ucabilen, Kosabilen {
+class Kus with Ucabilen, Kosabilen,Yuzebilen {
   //....
   void m() {
     print(a);

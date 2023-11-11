@@ -3,6 +3,7 @@ import 'Ogrenci.dart';
 void main(List<String> args) {
   //veritipi/sınıf/    obje       = veritipi/sınıf/
   //veritipi/sınıf/    nesne      = veritipi/sınıf/
+  
   //veritipi/sınıf/    instance   = veritipi/sınıf/
   //veritipi/sınıf/    örnek      = veritipi/sınıf/
 

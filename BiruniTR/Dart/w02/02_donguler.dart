@@ -6,28 +6,32 @@ void main(List<String> args) {
     print(i);
   }
 
-  int sayac = 1;
+  
   print("-------------------------------------");
+  //************************************************************ */
+  int sayac = 1;
   while (sayac <= 15) {
     print(sayac);
     sayac++;
   }
 
-  sayac = 1;
+  
   print("-------------------------------------");
-
+  //*********************************************************** */
+  sayac = 1;
   do {
     print(sayac);
     sayac++;
   } while (sayac <= 15);
-
+//**************************************************************** */
   //infinite loops/sonsuz döngüler
   /*for (;;) {
     print("İşlem");
     //if (true) break;  //döngüden tamamen çıkar
-    // continue // alt satrıları çalışıma zdöngü başına döner
+    // continue // alt satrıları çalışıma döngü başına döner
   }
   */
+  //**************************************************************** */
   /*
   while (true) {
     //break; continue;
@@ -35,20 +39,19 @@ void main(List<String> args) {
   }
   */
 
-  //recursive
-  for (var i = 0; i <= 5; i++) {
-    print(Fibonacci(i));
-  }
+ 
+//****************************************************** */
+ 
 
-  print(Toplam(10));
-
-  //for in dongusu
+  /*//for in dongusu
   List<int> list1 = [1, 2, 3];
   for (var element in list1) {
     print(element);
   }
-}
+*/
+//*********************************************************** */
 
+//recursive
 //recursive döngüler /Özyinelemeli
 //Fib   0 1 1 2 3 5 8 13 21 .....
 int Fibonacci(int index) {
@@ -58,9 +61,16 @@ int Fibonacci(int index) {
   return Fibonacci(index - 1) + Fibonacci(index - 2);
 }
 
+ for (var i = 0; i <= 5; i++) {//0,1,2,3,4,5
+    print(Fibonacci(i));
+  }
+  
+//*/******************************************************** */
 //1 den n e kadar olan sayıların top:
 int Toplam(int n) {
   if (n == 0) return 0;
   var top = n + Toplam(n - 1);
   return top;
 }
+ print(Toplam(5));
+ }
