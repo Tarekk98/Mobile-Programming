@@ -7,15 +7,15 @@ void main(List<String> args) {
 
 class Student {
   /*
-   int? id;  //risksiz
+   int? id;  //risksiz//?= isim olarak:  no lable
    String? adi;  //risksiz
    */
 
-  late int id; //riskli
-  late String adi; //riskli
+  late int id; //riskli//id =null kesin olamaz
+  late String adi; //riskli //adi =null kesin olamaz
 
   final int department;
   Student(this.department) {
-    //risksiz
+    //risksiz//hata üretmez
   }
 }

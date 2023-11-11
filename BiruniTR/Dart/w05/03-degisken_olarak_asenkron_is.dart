@@ -1,10 +1,10 @@
 import 'dart:async';
 
 void main(List<String> args) async {
-  var islem = Future(() {
-    int n = 5;
+  var islem =  Future.delayed(Duration(seconds: 5), () {
+    
     int top = 0;
-    for (var i = 0; i < n; i++) {
+    for (var i = 0; i <= 5; i++) {
       top += i;
     }
     return top;
@@ -12,5 +12,5 @@ void main(List<String> args) async {
 
   var sonuc = await islem;
 
-  print(sonuc);
+  print("hello $sonuc");
 }
