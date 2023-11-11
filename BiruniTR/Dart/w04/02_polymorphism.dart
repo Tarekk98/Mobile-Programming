@@ -1,27 +1,57 @@
 void main(List<String> args) {
-  isYaptir(Insan());
-  isYaptir(Canli());
-  isYaptir(Balik());
-  isYaptir(Kus());
+  //isYaptir(Insan()); //fonksiyon
+  //isYaptir(Canli());
+  //isYaptir(Balik());
+  //isYaptir(Kus());
 
-  iletisim(SmsService());
-  iletisim(EmailService());
-
+  iletisim(SmsService());//1
+  iletisim(EmailService());//1
 }
 
 
-abstract class MessageService {//فئة
-  void SendMessage();//أساليب افتراضية
-  void ReadMessage();//أساليب افتراضية
+abstract class MessageService {
   
+  //فئة
+  void SendMessage(); //أساليب افتراضية
+
+  void ReadMessage(); //أساليب افتراضية
 }
 
-void iletisim(MessageService messenger) {
-  //.....
-  messenger.SendMessage();
+class SmsService implements MessageService {//4
+
+  @override
+  void SendMessage() {//4
+    print("Sms message sent!");
+  }
+
+  @override
+  void ReadMessage() {
+    print("Sms message read!");
+  }  
 }
 
-void isYaptir(Canli c ) {
+class EmailService implements MessageService {
+
+   @override
+  void SendMessage() {
+    print("Email message sent!");
+  }
+
+  @override
+  void ReadMessage() {
+    print("Email message read!");
+  }
+}
+
+void iletisim(MessageService messenger) {//2 messenger yerine geldi SmsService(),
+//void iletisim(MessageService SmsService()) {
+  //........
+  messenger.SendMessage();//3
+ // SmsService().SendMessage();//3
+  messenger.ReadMessage();
+}
+//************************************************************************* */
+/*void isYaptir(Canli c) {
   c.hareketEt();
 }
 
@@ -50,4 +80,4 @@ class Insan extends Canli {
   void hareketEt() {
     print("Insan yürümeye başladı");
   }
-}
+}*/
