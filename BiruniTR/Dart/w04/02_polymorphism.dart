@@ -6,7 +6,7 @@ void main(List<String> args) {
 
   iletisim(SmsService());
   iletisim(EmailService());
-  
+
 }
 
 
@@ -49,29 +49,5 @@ class Insan extends Canli {
   @override
   void hareketEt() {
     print("Insan yürümeye başladı");
-  }
-}
-
-class SmsService implements MessageService {
-  @override
-  void ReadMessage() {
-    print("Sms message read!");
-  }
-
-  @override
-  void SendMessage() {
-    print("Sms message sent!");
-  }
-}
-
-class EmailService implements MessageService {
-  @override
-  void ReadMessage() {
-    print("Email message read!");
-  }
-
-  @override
-  void SendMessage() {
-    print("Email message sent!");
   }
 }
