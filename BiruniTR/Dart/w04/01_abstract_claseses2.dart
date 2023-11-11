@@ -4,11 +4,11 @@ void main(List<String> args) {}
 //abstract: Sınıftır, sanal metot barındırabilir, instance alınamaz,sadece miras alınabilir
 
 //dart dilince Interface yoktur, abstract sınıfları kullanırız
-//abstract sınıflar dart da hem extend hemde implemente edilebilir.
+//abstract sınıflar dart ta hem extend hem de implemente edilebilir.
 
 abstract class Matematik {
   // الملخص: إنها فئة، يمكن أن تحتوي على أساليب افتراضية، ولا يمكن إنشاء مثيل لها، ويمكن توريثها فقط.
-  final PI = 3.14;
+  
 
   double toplama(double a, double b);
   double cikarma(double a, double b);
@@ -25,13 +25,22 @@ abstract class IleriMatematik {
 class HesapMakinesi {
   //.....
 }
+class HesapMakinesii {
+  //.....
+}
 
 class DortIslem extends HesapMakinesi implements Matematik, IleriMatematik {
+  //https://1kodum.com/dart-dilinde-interface-kavrami/
   @override
   // TODO: implement PI
   double get PI => throw UnimplementedError();
-  //للتلخيص، يتم استخدام العبارة "=>" في Dart لتحديد وظائف أو خصائص قصيرة ذات سطر واحد وتساعد بشكل عام في جعل التعليمات البرمجية أكثر قابلية للقراءة.
-  //رمي UnimplementedError(); يُستخدم التعبير في لغة برمجة Dart للإشارة إلى أن عملية أو ميزة لم يتم تنفيذها أو تنفيذها بعد. يطرح هذا البيان استثناءً، مما يشير إلى أن البرنامج واجه موقفًا غير متوقع وحدث خطأ.
+//Dart'taki "=>" ifadesi kısa, tek satırlık işlevleri veya özellikleri tanımlamak için kullanılır 
+//ve genellikle kodun daha okunabilir olmasına yardımcı olur.
+
+//UnimplementedError()'u at; İfade, Dart programlama dilinde bir işlemin veya özelliğin henüz uygulanmadığını veya yürütülmediğini belirtmek için kullanılır. 
+//Bu ifade, programın beklenmeyen bir durumla karşılaştığını ve bir hata oluştuğunu belirten bir istisna atar.
+
+//`throw` kelimesi, Dart dilinde bir hata (exception) fırlatmak için kullanılır. `throw` ifadesi, bir programın çalışma zamanında bir hatayla karşılaşıldığında, programın normal akışını durdurarak hatayı işlemek için kullanılır. 
 
   @override
   double bolme(double a, double b) {
