@@ -1,9 +1,9 @@
 
-//mixin هو مفهوم مستخدم في لغة برمجة Dart ويستخدم لإضافة وظائف إضافية إلى الفئات
+//mixin   ويستخدم لإضافة وظائف إضافية إلى الفئات
 
 void main(List<String> args) {
-  Kus k = Kus();
-  k.m();
+  Kus sonono = Kus();
+  sonono.tur();
 }
 
 mixin Ucabilen {
@@ -27,10 +27,15 @@ mixin Kosabilen {
   }
 }
 
+
+//`with` kelimesi, Dart dilinde mixin kullanımını sağlar. 
+//Mixin, bir sınıfa başka bir sınıfın özelliklerini eklemek için kullanılan bir mekanizmadır. 
 class Kus with Ucabilen, Kosabilen,Yuzebilen {
   //....
-  void m() {
+  void tur() {
     print(a);
+    print(b);
+    print(c);
     uc();
     kos();
   }

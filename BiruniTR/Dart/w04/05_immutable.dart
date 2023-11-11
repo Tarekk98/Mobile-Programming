@@ -25,7 +25,7 @@ class Student {
 }
 
 //IMMUTABLE// değiştirilemez
-//*
+
 /*class Student {
   //immutable
   final int id;

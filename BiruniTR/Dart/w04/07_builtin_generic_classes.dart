@@ -1,4 +1,4 @@
-void main(List<String> args) {
+/*void main(List<String> args) {
   Kuyruk<double> reel = Kuyruk();
   Kuyruk<int> tamsayi = Kuyruk();
   Kuyruk<String> isimler = Kuyruk();
@@ -7,13 +7,15 @@ void main(List<String> args) {
 }
 
 void dugum<K,V>(K key){
+  //`K` genellikle bir anahtar (key) türünü ifade ederken, `V` genellikle bir değer (value) türünü ifade eder.
+  // Bu generic yapı, çeşitli veri yapıları oluştururken tür güvenliği sağlamak ve kodun daha geniş bir yelpazede kullanılabilir olmasını sağlamak için kullanılır.
  //.... 
 }
 
 void islem<T>(T a,T b) {
   ///....
   ///
-  ///
+  
 }
 
 //built in - generic class
@@ -56,6 +58,62 @@ class Kuyruk<T> {
     list.add(a);
   }
 
+  T cikar() {//T==int double ....her şey olabilir
+    var removed = list.first;
+    list.remove(list.first);
+    return removed;
+  }
+  //db yaz...
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+void main(List<String> args) {
+  Kuyruk<double> reel = Kuyruk();
+  Kuyruk<int> tamsayi = Kuyruk();
+  Kuyruk<String> isimler = Kuyruk();
+
+  islem<int>(1, 1);//işlem
+}
+
+void dugum<K,V>(K key){
+ //.... 
+}
+
+void islem<T>(T a,T b) {
+  ///....
+  ///
+  
+}
+List<int> list = [];
+List<String> list2 = [];
+Map<int, String> coll = {};
+
+class SayiKuyrugu {
+  List<int> list = [];
+  void ekle(int a) {//Bu bir fonksiyondur
+    list.add(a);
+  }
+  int cikar() {//Bu bir fonksiyondur
+    var removed = list.first;
+    list.remove(list.first);
+    return removed;
+  }
+}
+class Kuyruk<T> {
+List<T> list = [];
+  void ekle(T a) {
+    list.add(a);
+  }
   T cikar() {//T==int double ....her şey olabilir
     var removed = list.first;
     list.remove(list.first);

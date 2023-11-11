@@ -3,9 +3,10 @@ void main(List<String> args) {
   int a2 = 1;
   final int a3;
   a3 = 1; //1 kez değer değişibilir.
-  //a3 = 4; //err
+
+  //a3 = 4; //erorr
   const int a4 = 1; //direkt değer almak zorunda ve hiç değişmezler
-  //a4 = 4; //err
+  //a4 = 4; //erorr
 
   final Student s1 = Student(id: 1, fullName: "Ahmet");
   s1.id = 5;
