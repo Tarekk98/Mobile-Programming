@@ -3,6 +3,7 @@
 /*void main(List<String> args) async {
   print("İşler Başladı");
 
+//Asynchronous
   Future.delayed(Duration(seconds: 2), () async {
     for (var i = 0; i < 5; i++) {
       await Future.delayed(Duration(seconds: 1));
@@ -28,7 +29,7 @@
 
 void main(List<String> args) async {
   print("İşler Başladı");
-
+//Synchronous
   await Future.delayed(Duration(seconds: 2), () async {
     for (var i = 0; i < 5; i++) {
       await Future.delayed(Duration(seconds: 1));
@@ -76,7 +77,7 @@ void main(List<String> args) async {
 
 
 /************************************************************* */
-
+//Asynchronous
 /*void main(List<String> args) async {
   print("işler başladı");
   Future.delayed(Duration(seconds: 3), () {
@@ -85,6 +86,7 @@ void main(List<String> args) async {
   print("işler bitti");
 }*/
 /******************************************************** */
+//Synchronous
 /*void main(List<String> args) async {
   print("işler başladı");
   await Future.delayed(Duration(seconds: 3), () {
@@ -93,6 +95,7 @@ void main(List<String> args) async {
   print("işler bitti");
 }*/
 /********************************************************** */
+//Asynchronous
 /*void main(List<String> args) async {
   var a;
   print("işler başladı");
@@ -103,6 +106,7 @@ void main(List<String> args) async {
   print("işler bitti $a");
 }*/
 /***************************************************************** */
+//Synchronous
 /*void main(List<String> args) async {
   var a;
   print("işler başladı");
