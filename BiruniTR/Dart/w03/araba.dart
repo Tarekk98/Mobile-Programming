@@ -32,17 +32,14 @@ class Araba {
     if (aracKategori == 0) {
       var a = Araba();
       a.tur = "Otomobil";
-
       return a;
     } else if (aracKategori == 1) {
       var a = Araba();
       a.tur = "SUV";
-
       return a;
     } else {
       var a = Araba();
       a.tur = "Ticari";
-
       return a;
     }
   }
